@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="static/style3.css">
+
+
+
+
+<div class="main">
+	<h1>Food Detail Area Here!</h1>
+	<form id="formdonor" method="POST" action="{{ url_for('demo4')}}" class="input-group">
+		
+		<label>Name:</label>
+		<input type="text" class="input-field" name="name" required>
+		<label>City:</label>
+		<input type="text" class="input-field" name="city" required>
+		<label>Phone:</label>
+		<input type="text" class="input-field" name="phone" required>
+		<label>Pick-up Address:</label>
+		<input type="text" class="input-field" name="adderess" required>
+
+		
+
+		<label>Is This Surplus Food?:</label>
+		<input type="radio" id="yes" name="yes" value="yes"><label>yes</label>
+		<input type="radio" id="yes" name="yes" value="yes"><label>no</label><br>
+		
+		<label>Provide Food Info:</label>
+		<input type="text" name="food_info"><br>
+
+		
+		
+		<label>Quantity:</label>
+		<input type="text" name="quantity"><br>
+	
+		<br>
+		
+	<input type="datetime-local" name="pick_up_date">
+	<br>
+	<input type="checkbox" class="checkbox"><span>By checking this box,I confirm the food quality is safe and fit 		for consumption</span>
+	<br>
+	<input class="button" type="submit" value="Give me Food!" onclick="submitForm()">
+</form>
+</div>
+<div class="order">
+	<h1>Thanks for your order!</h1>
+	<img src="static/image/1.jpg">
+</div>

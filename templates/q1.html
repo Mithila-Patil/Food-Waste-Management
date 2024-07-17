@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>customer</title>
+	<h1>CUSTOMER DESK</h1>
+</head>
+<body><center>
+	<form action="/home", method="POST">
+		<p>Customer number:<input type="number" name="cust_no"></p><br><br>
+		
+		
+		<p>Sex:</p>
+		<input type="radio" name="sex" value="male">Male
+		<input type="radio" name="sex" value="female">Female
+		<input type="radio" name="sex" value="other">Other
+		<br><br>
+		<p>BirthDate:<input type="date" name="bithdate"></p><br><br>
+		<p>Country:</p>
+		<select id="country">
+			<option value="India">India</option>
+			<option value="America">America</option>
+			<option value="Canada">Canada</option>
+		</select>
+		<p>State:</p>
+		<select id="state">
+			<option value="Maharastra">Maharastra</option>
+			<option value="Jammu">Jammu</option>
+			<option value="Himalaya">Himalaya</option>
+		</select>
+		<p>Address:<input type="text" name="address"></p>
+		<p>Pincode:<input type="text" name="pincode"></p>
+		<p>Mobile no:<input type="text" name="m_no"></p>
+		<p>Email:<input type="text" name="email"></p><br><br>
+		<input type="submit" name="submit">
+		<input type="reset" name="submit">
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<h1>POWER BILL SUPPLIERS</h1>
+</head>
+<body>
+	
+		
+			{% for data in data %}
+				{% set conu=data[2]-data[3] %}
+			{% endfor %}
+		<table>
+		<tbody>
+			<tr>
+				<th>bill no</th>
+				<th>consumer no</th>
+				<th>previous unit</th>
+				<th>current unit</th>
+				<th>consumed unit</th>
+			</tr>
+			<tr>
+				<td>{{bno}}</td>
+				<td>{{cno}}</td>
+				<td>{{pu}}</td>
+				<td>{{cu}}</td>
+				<td>{{conu}}</td>
+			</tr>
+		</tbody>
+	</table>
+	</form>
+</body>
+</html>
